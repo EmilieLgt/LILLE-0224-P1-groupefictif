@@ -1,1 +1,1 @@
-# LILLE0224-P1-groupefictif
+# LILLE-0224-P1-groupefictif
