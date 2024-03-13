@@ -1,3 +1,36 @@
+
+*{box-sizing: border-box;}
+body{margin: 0;} /* Suppresion des marges par défaut */
+
+:root {
+    --backgroundColor: rgb(208, 0, 255);
+    /* (pour le fond)*/
+    --primaryColor: rgb(255, 255, 255);
+    /* pour les textes principaux*/
+    --secondaryColor: rgb(38, 228, 238);
+    /*(deuxieme couleur de texte)*/
+ 
+    --h1Color: rgb(242, 255, 0);
+    /*(titre principal)*/
+    --h2Color: rgb(242, 255, 0);
+    /*(titres de section)*/
+    --h3Color: rgb(213, 89, 232);
+    /*(sous-titres de section)*/
+
+    --altPrimaryColor: rgb(0, 0, 0); 
+    --altSecondaryColor: rgb(64, 239, 64);
+
+    --altH1Color: rgb(128, 0, 128);
+    --altH2Color: rgb(64, 239, 64);
+
+    --primaryfont: Montserrat;
+    --h2font: orbitron;
+    --h1font:Comic; /*à déterminer */
+
+
+}
+ 
+
 body {
     background-color: black;
 }
