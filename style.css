@@ -1,0 +1,222 @@
+@media screen and (max-width: 990px) {
+
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        background-color: rgb(13, 13, 13);
+        font-family: "Oswald", sans-serif;
+    }
+
+
+    h2 {
+        margin-left: 2em;
+        margin-bottom: 3em;
+        display: flex;
+        justify-content: flex-start;
+        color: #FFFB00;
+    }
+
+    .history {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(Images/Samurai2.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: #d204e5 solid 0.2em;
+        box-shadow: 0 0.2em #d204e5, 0 0.2em #d204e5, 0 0 0.8em #d204e5, 0 0 2.8em #d204e5, inset 0 0 1.3rem #d204e5;
+        gap: 5em;
+    }
+
+    .history p {
+        font-size: 1.5em;
+        display: flex;
+        color: whitesmoke;
+        gap: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: rgb(0, 0, 0, 0.3)
+    }
+
+
+    /*.cards {
+        margin: auto;
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5em;
+    }
+
+    .cards img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 7em;
+        height: 7em;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 1em;
+        border: #cb09ae solid 2px;
+    }
+
+    .card h3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card p {
+        display: flex;
+    }
+
+    .cards :nth-child(odd) {
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .cards :nth-child(even) {
+        display: flex;
+        align-self: flex-end;
+
+    }*/
+}
+
+
+@media screen and (max-width: 390px) {
+
+    body {
+        margin: 0;
+        width: auto;
+        height: auto;
+        background-color: #000000;
+        font-family: "Oswald", sans-serif;
+    }
+
+    /*@keyframes flicker {
+
+        0%,
+        18%,
+        22%,
+        25%,
+        53%,
+        57%,
+        100% {
+            text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #0fa,
+                0 0 80px #0fa,
+                0 0 90px #0fa,
+                0 0 100px #0fa,
+                0 0 150px #0fa;
+        }
+
+        20%,
+        24%,
+        55% {
+            text-shadow: none;
+        }
+    }*/
+
+    .history h2 {
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 3em;
+        display: flex;
+        justify-content: flex-start;
+        color: #FFFB00;
+    }
+
+    .history {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(Images/Samurai.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: #d204e5 solid 0.2em;
+        box-shadow: 0 0.2em #d204e5, 0 0.2em #d204e5, 0 0 0.8em #d204e5, 0 0 2.8em #d204e5, inset 0 0 1.3rem #d204e5;
+        gap: 5em;
+    }
+
+    .history p {
+        display: flex;
+        background-color: rgb(0, 0, 0, 0.3);
+        gap: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        animation: flicker 1.5 infinite alternate;
+    }
+
+
+    /*.cards {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 5em;
+    }
+
+    .card {
+        margin: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2em;
+        background-color: #db7ce3;
+        border: #d204e5 solid 0.2em;
+        box-shadow: 0 0.2em #d204e5, 0 0.2em #d204e5, 0 0 0.8em #d204e5, 0 0 2.8em #d204e5, inset 0 0 1.3rem #d204e5;
+    }
+
+
+    .cards img {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 7em;
+        height: 7em;
+        border-radius: 60px;
+    }
+
+    .card h3 {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFB00;
+    }
+
+    .cards p {
+        margin: auto;
+        text-align: center;
+        color: #FFFB00;
+    } */
+}
