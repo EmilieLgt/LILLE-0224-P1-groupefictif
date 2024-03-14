@@ -141,5 +141,13 @@ title.addEventListener('mouseout', function () {
     title.style.color = "yellow"; // Réinitialisez la couleur lorsqu'on quitte la zone du titre
 });*/
 
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+    });
+});
 
 
