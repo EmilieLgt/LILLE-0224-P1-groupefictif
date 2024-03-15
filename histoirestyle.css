@@ -1,0 +1,202 @@
+@media screen and (max-width: 990px) {
+
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        background-color: rgb(13, 13, 13);
+        font-family: "Oswald", sans-serif;
+    }
+
+
+    h2 {
+        margin-left: 2em;
+        margin-bottom: 3em;
+        display: flex;
+        justify-content: flex-start;
+        color: #FFFB00;
+    }
+
+    .history {
+        height: 100%;
+        background-image: url("Images/Samurai1.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*Rajout d'une div pour contrôler la fenêtre incluant le texte*/
+    .history-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    .history p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15pt;
+        opacity: 2;
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        width: auto;
+        height: auto;
+        background-color: #000000;
+        font-family: "Oswald", sans-serif;
+    }
+
+    /* modification de la taille de la fenêtre b-g*/
+    .history {
+        width: 100%;
+        margin: 0;
+        height: 70vh;
+        background-image: url("Images/Samurai1.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*Ajout de la div texte pour paramètre et ajustement des valeurs*/
+    .history-text {
+        padding: 0em 2em 0em 2em;
+        line-height: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    /*Taille de typo et marges modifiés*/
+    .history p {
+        height: auto;
+        margin: 0em 2em 0em 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10pt;
+        opacity: 2;
+    }
+
+}
+
+:root {
+    --backgroundColor: rgb(224, 124, 247);
+    /* (pour le fond)*/
+    --primaryColor: white;
+    /*(pour les textes principaux)*/
+    --secondaryColor: rgb(0, 0, 0);
+    /*(deuxieme couleur de texte)*/
+    --h1Color: yellow;
+    /*(titre principal)*/
+    --h2Color: rgb(242, 255, 0);
+    /*(titres de section)*/
+    --h3Color: #d559e8;
+
+    --altPrimaryColor: rgb(38, 228, 238);
+    --altSecondaryColor: rgb(64, 239, 64);
+
+    --altH1Color: rgb(128, 0, 128);
+    --altH2Color: rgb(64, 239, 64);
+
+    /*AJOUTS*/
+    --primaryfont: "Montserrat", sans-serif;
+    --h2font: "Orbitron", sans-serif;
+
+}
+
+* {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    margin: 0;
+    background-image: url("backgroundSite.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p {
+    color: var(--altPrimaryColor);
+    font: var(--primaryfont);
+}
+
+h2 {
+    text-align: center;
+    display: inline;
+    padding-left: 2vw;
+    font-size: 3.5rem;
+    font-family: var(--h2font);
+    color: var(--h2Color);
+    animation: pulsate 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulsate {
+    100% {
+        /* Larger blur radius */
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px var(--h3Color),
+            0 0 80px var(--h3Color),
+            0 0 90px var(--h3Color),
+            0 0 100px var(--h3Color),
+            0 0 150px var(--h3Color);
+    }
+
+    0% {
+        /* Smaller blur radius */
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px var(--h3Color),
+            0 0 45px var(--h3Color),
+            0 0 55px var(--h3Color),
+            0 0 70px var(--h3Color),
+            0 0 80px var(--h3Color);
+    }
+}
+
+h3 {
+    text-align: center;
+    display: inline;
+    font-size: 2rem;
+    font-family: var(--h2font);
+    padding-left: 12vw;
+    color: var(--h2Color);
+    animation: pulsate 2.5s ease-in-out infinite alternate;
+}
+
+h4 {
+    text-align: center;
+    display: inline;
+
+    font-size: 1rem;
+    font-family: var(--h2font);
+    color: var(--h2Color);
+}
