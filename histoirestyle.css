@@ -46,7 +46,7 @@
         align-items: center;
         font-size: 15pt;
         opacity: 2;
-        padding: 3em;
+
     }
 }
 
@@ -91,7 +91,7 @@
     /*Taille de typo et marges modifiés*/
     .history p {
         height: auto;
-        margin: 0em 2em 0em 2em;
+        margin: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
