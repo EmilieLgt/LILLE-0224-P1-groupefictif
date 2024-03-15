@@ -1,0 +1,323 @@
+:root {
+    --backgroundColor: rgb(224, 124, 247);
+    /* (pour le fond)*/
+    --primaryColor: white;
+    /*(pour les textes principaux)*/
+    --secondaryColor: rgb(0, 0, 0);
+    /*(deuxieme couleur de texte)*/
+    --h1Color: yellow;
+    /*(titre principal)*/
+    --h2Color: rgb(242, 255, 0);
+    /*(titres de section)*/
+    --h3Color: #d559e8;
+
+    --altPrimaryColor: rgb(38, 228, 238);
+    --altSecondaryColor: rgb(64, 239, 64);
+
+    --altH1Color: rgb(128, 0, 128);
+    --altH2Color: rgb(64, 239, 64);
+
+    /*AJOUTS*/
+    --primaryfont: "Montserrat", sans-serif;
+    --h2font: "Orbitron", sans-serif;
+
+}
+
+
+
+
+
+* {
+    overflow-x: hidden;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    background-color: var(--backgroundColor);
+    margin: 0;
+    background-image: url("Images/backgroundSite.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 2em;
+    font-size: 2rem;
+    font-family: var(--h2font);
+    color: var(--h2Color);
+    animation: pulsate 2.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes pulsate {
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px var(--h3Color),
+            0 0 80px var(--h3Color),
+            0 0 90px var(--h3Color),
+            0 0 100px var(--h3Color),
+            0 0 150px var(--h3Color);
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px var(--h3Color),
+            0 0 45px var(--h3Color),
+            0 0 55px var(--h3Color),
+            0 0 70px var(--h3Color),
+            0 0 80px var(--h3Color);
+    }
+}
+
+
+h3 {
+    text-align: center;
+    display: inline;
+    font-size: 1.5rem;
+    font-family: var(--h2font);
+    padding-left: 19vw;
+    color: var(--h2Color);
+    animation: pulsate 2.5s ease-in-out infinite alternate;
+}
+
+
+h4 {
+    text-align: center;
+    display: inline;
+    font-size: 1rem;
+    font-family: var(--h2font);
+    color: var(--h2Color);
+}
+
+
+p {
+    color: var(--altPrimaryColor);
+    font-family: var(--primaryfont);
+    font-size: 1em;
+}
+
+header {
+    /* position: relative; */
+    /* display: flex; */
+    height: 15rem;
+    background-color: #000000;
+    /* background-color: black; */
+
+    background-size: cover;
+    /* La largeur s'étire sur 100% de la largeur de la fenêtre, la hauteur est automatique */
+    background-repeat: no-repeat;
+
+}
+
+.imageTitre {
+
+    top: 25%;
+    width: 71%;
+    /* font-family: "miyoshi"; */
+    /* letter-spacing: 10px; */
+    /* left: 66%; */
+    position: absolute;
+    right: 4%
+        /* color: hsl(197.21deg 100% 45.05%);
+    font-size: 32pt;
+    /* font-family: "Slackside One", cursive; */
+        /* font-family: "miyoshi"; */
+        /* letter-spacing: 10px; */
+        /* position: absolute;
+    top: 219px; */
+        /* Positionnement vertical au milieu */
+        /* left: 66%; */
+        /* Positionnement horizontal au milieu */
+        /* transform: translate(-50%, -50%);
+    Centre le texte par rapport à son coin supérieur gauche */
+}
+
+*/
+/* .header-text h1 {
+    font-size: 2em;
+} */
+
+.header-img {
+    /* position: relative; */
+    width: 140px;
+}
+
+/* top: 50%; */
+/* Positionnement vertical au milieu */
+/* left: 183%; */
+/* Positionnement horizontal au milieu */
+/* transform: translate(-50%, -50%); */
+/* Centre le texte par rapport à son coin supérieur gauche */
+/* margin-left: 193px;
+    margin-top: 45px;*/
+
+
+.group-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: hsl(324, 85%, 39%);
+    margin: 5px 0 0 5px;
+}
+
+.mobile-menu {
+    display: none;
+    transition: transform 0.3s ease-in-out;
+    /* Ajout de la transition pour un effet en douceur */
+    transform: translateY(-100%);
+    /* Cache initialement le menu en le déplaçant vers le haut */
+}
+
+.mobile-menu.active {
+    display: block;
+    position: fixed;
+    margin-left: 50px;
+    margin-top: 32px;
+    transform: translateY(0);
+    /* Affiche le menu en le déplaçant vers sa position d'origine  */
+}
+
+.mobile-menu.active a {
+    color: #f8f804;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    padding: 4px;
+    margin: 5px;
+    font-family: var(--primaryfont);
+    text-align: center;
+
+    background-color: rgb(128, 0, 128, 0.8);
+    border: 0 solid #BC13FE;
+    border-radius: 2rem;
+    /* box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #BC13FE,
+        0 0 0.8rem #BC13FE,
+        0 0 2.8rem #BC13FE,
+        inset 0 0 1.3rem #BC13FE; */
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 550px;
+    background-image: url(1-3.webp);
+    height: 3rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.social-links a {
+    margin-right: 50px;
+}
+
+.copyright {
+
+    color: violet;
+}
+
+@media screen and (min-width: 991px) {
+
+    
+
+    .imageTitre {
+        top: 3%;
+        width: 97%;
+        right: 14px;
+    }
+
+
+
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: none;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 25px;
+}
+
+.mobile-menu li {
+    margin: 15px;
+    background-color: transparent;
+}
+
+.desktop-menu {
+    display: contents;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 25px;
+}
+
+.desktop-menu ul {
+    position: absolute;
+    margin-top: 208px;
+    margin-left: 262px;
+    display: flex;
+}
+
+.desktop-menu a {
+    color: #f8f804;
+    text-decoration: none;
+}
+
+.header-text {
+    font-size: 35pt;
+    top: 218px;
+    left: 75%;
+}
+
+.header-img {
+    display: none;
+    width: 150px;
+    margin-left: 675px;
+    margin-top: 31px;
+    left: 418%;
+}
+}
