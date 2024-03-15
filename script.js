@@ -31,34 +31,6 @@ slider.addEventListener('mousemove', e => {
 })
 
 
-leftBTN.addEventListener('click', e => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-});
-
-
-function pressRightArrow() {
-    // Simuler l'événement de la touche flèche de droite
-    let event = new KeyboardEvent('keydown', {
-      key: 'ArrowRight',
-      keyCode: 39,
-      which: 39,
-      code: 'ArrowRight'
-    });
-    document.dispatchEvent(event);
-rightBTN.addEventListener('click', pressRightArrow)
-};
-
-//  leftBTN.addEventListener(
-
-   
-// });
-
-// rightBTN.addEventListener('click', e => {
-    
-// })
 
 function filterPays () {
     let filtre, tableau, ligne, cellule, i, texte 
